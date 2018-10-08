@@ -107,7 +107,7 @@
 
                 decimo = tempo * liquido;
 
-                salarios = decimo + (quantidade * liquido) + liquido; 
+                salarios = decimo + (quantidade * liquido) + liquido;
 
                 ferias = ((1 / 3) * tempo) * liquido;
 
@@ -151,6 +151,7 @@
                 document.getElementById("decimo1").innerHTML = "R$" + " " + Math.round(decimo * 100) / 100;
                 document.getElementById("salarios1").innerHTML = "R$" + " " + Math.round(salarios * 100) / 100;
                 document.getElementById("ferias1").innerHTML = "R$" + " " + Math.round(ferias * 100) / 100;
+                document.getElementById("fgts1").innerHTML = "R$" + " " + Math.round(fgts * 100) / 100;
                 document.getElementById("jcausa").innerHTML = "R$" + " " + Math.round(jcausa * 100) / 100;
                 document.getElementById("prejuizo").innerHTML = "R$" + " " + Math.round(prejuizo * 100) / 100;
                 document.getElementById("djcausa").innerHTML = "R$" + " " + Math.round(djcausa * 100) / 100;
@@ -230,7 +231,7 @@
                 <tr><th>Décimo <td><p id="decimo1"></p></td></th></tr>
                 <tr><th>Salários<td><p id="salarios1"></p></td></th></tr>
                 <tr><th>Férias<td><p id="ferias1"></p></td></th></tr>
-                <tr><th>FGTS<td>-</td></th></tr>
+                <tr><th>FGTS recolhido<td><p id="fgts1"></p></td></th></tr>
                 <tr><th>Multa FGTS<td>-</td></th></tr>
                 <tr><th>Total Recebido <td><p id="jcausa"></p></td></th></tr>
                 <tr><th>Prejuízo Justa Causa<td><p id="prejuizo"></p></td></th></tr>

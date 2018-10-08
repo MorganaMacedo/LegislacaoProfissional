@@ -479,7 +479,7 @@
                         <p>Quando o fim do contrato ocorre por vontade do empregador, o empregado tem o direito ao aviso prévio, férias vencidas, acrescidas de 1/3 de férias proporcionais,  além de multa de 40% sobre o FGTS, que é a penalidade para dispensa imotivada. O empregado também tem o direito de sacar o FGTS e solicitar o recebimento do seguro-desemprego.</p>
                         <br/>
                         <h2><li>Dispensa por justa causa</li></h2>
-                        <p>Quando o empregado comete faltas graves, como desonestidade ou má conduta, violação de segredo de empresa, alcoolismo, agressão física e à honra contra colegas, chefe e empregador, dentre outras, como previsto no artigo 482 da CLT, o empregado receberá apenas o saldo de salário e os períodos de férias vencidas.</p>
+                        <p>Quando o empregado comete faltas graves, como desonestidade ou má conduta, violação de segredo de empresa, alcoolismo, agressão física e à honra contra colegas, chefe e empregador, dentre outras, como previsto no artigo 482 da CLT, o empregado receberá apenas o saldo de salário e os períodos de férias vencidas. Onde o FGTS ficará retido por um período de 5 anos até o momento que possa ser movimentado.</p>
                         <br/>
                         <h2><li>Cálculo CLT</li></h2>
                         <p>No nosso código, do cálculo do CLT, precisamos levar em consideração algumas variáveis, para formulação do salário líquido. Tendo em vista o salário bruto, precisamos descontar o INSS e o IRPF, para obtermos o salário líquido mensal.</p>
