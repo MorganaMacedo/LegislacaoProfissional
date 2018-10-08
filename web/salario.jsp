@@ -101,8 +101,6 @@
 
                 liquido = valor - inss - irpf;
 
-                receber = liquido * quantidade;
-
                 tempo = quantidade / 12;
 
                 tempo = parseInt(tempo);
