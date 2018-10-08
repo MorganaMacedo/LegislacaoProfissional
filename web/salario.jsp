@@ -78,7 +78,7 @@
                     inss = 0.11 * 5645.80;
                     taginss = 11;
                 }
-                if (valor < 1903.99) {
+                if (valor <= 1903.98) {
                     irpf = 0;
                     tagirpf = 0;
                 }
@@ -109,7 +109,7 @@
 
                 decimo = tempo * liquido;
 
-                salarios = decimo + (quantidade * liquido) + liquido; //                ?????????? liquido
+                salarios = decimo + (quantidade * liquido) + liquido; 
 
                 ferias = ((1 / 3) * tempo) * liquido;
 
