@@ -388,7 +388,7 @@
             </div>
         </div>
         <div class="fundo-teste2">
-            <p>Desenvolvido por <a href="githhhhhh">Morgana Macedo e Michel Madruga</a></p>
+            <p>Desenvolvido por <a href="https://github.com/MorganaMacedo/LegislacaoProfissional">Morgana Macedo e Michel Madruga</a></p>
         </div>
 
 
