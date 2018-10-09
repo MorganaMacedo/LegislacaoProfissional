@@ -61,7 +61,7 @@
                 document.getElementById('container-table').style.display = "block";
                 var valor = document.getElementById("valor").value;
                 var quantidade = document.getElementById("quantidade").value;
-                var inss, irpf, receber, tempo, decimo, salarios, ferias, fgts, multa, totalrecebido;
+                var inss, irpf, receber, tempo, decimo, salarios, ferias, fgts, multa, totalrecebido, diferenca1, tagmaior1;
                 var meses, desconto, total, diferenca;
                 var liquido, tagmaior;
 
@@ -124,7 +124,10 @@
                 multa = 0.4 * fgts;
 
                 totalrecebido = salarios + ferias + fgts + multa;
-                
+
+                var jcausa = salarios + ferias;
+
+
                 if (totalrecebido > total) {
                     diferenca = totalrecebido - total;
                     tagmaior = "CLT";
@@ -133,14 +136,27 @@
                     diferenca = total - totalrecebido;
                     tagmaior = "MEI";
                 }
+                if (jcausa > total) {
+                    diferenca1 = jcausa - total;
+                    tagmaior1 = "CLT";
+                }
+                if (jcausa < total) {
+                    diferenca1 = total - jcausa;
+                    tagmaior1 = "MEI";
+                }
                 document.getElementById("totalrecebido").innerHTML = "R$" + " " + Math.round(totalrecebido * 100) / 100;
+
+                document.getElementById("jcausa").innerHTML = "R$" + " " + Math.round(jcausa * 100) / 100;
 
                 document.getElementById("total").innerHTML = "R$" + " " + Math.round(total * 100) / 100;
 
-                document.getElementById("tagmaior").innerHTML = "Lucro com" + " " + tagmaior;
+                document.getElementById("tagmaior").innerHTML = "Sem justa causa: Lucro com" + " " + tagmaior;
 
                 document.getElementById("diferenca").innerHTML = "R$" + " " + Math.round(diferenca * 100) / 100;
 
+                document.getElementById("tagmaior1").innerHTML = "Por justa causa: Lucro com" + " " + tagmaior1;
+
+                document.getElementById("diferenca1").innerHTML = "R$" + " " + Math.round(diferenca1 * 100) / 100;
 
 
             }
@@ -173,9 +189,12 @@
     <center>
         <div id="container-table">
             <table>
-                <tr><th>CLT<td><p id="totalrecebido"></p></td></th></tr>
+                <tr><th>CLT sem justa causa<td><p id="totalrecebido"></p></td></th></tr>
+                <tr><th>CLT por justa causa<td><p id="jcausa"></p></td></th></tr>
                 <tr><th>MEI<td><p id="total"></p></td></th></tr>
                 <tr><th><p id="tagmaior"></p><td><p id="diferenca"></p></td></th></tr> 
+                <tr><th><p id="tagmaior1"></p><td><p id="diferenca1"></p></td></th></tr> 
+
             </table>
         </div>
     </center>
